@@ -47,7 +47,7 @@
  * \endcode
  */
 
-#include "td/telegram/tdjson_export.h"
+#include "tdjson_export.h"
 
 #ifdef __cplusplus
 extern "C" {

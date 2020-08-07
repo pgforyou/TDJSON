@@ -7,7 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B30C1CAE2090EC67000F36F3 /* td_json_client.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30C1CAD2090EC67000F36F3 /* td_json_client.swift */; };
+		2DC2674224DADDD000BBE402 /* TlObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC2673924DADDD000BBE402 /* TlObject.h */; };
+		2DC2674324DADDD000BBE402 /* tdjson_export.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC2673B24DADDD000BBE402 /* tdjson_export.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DC2674424DADDD000BBE402 /* td_json_client.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC2673C24DADDD000BBE402 /* td_json_client.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DC2674524DADDD000BBE402 /* Client.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC2673D24DADDD000BBE402 /* Client.h */; };
+		2DC2674624DADDD000BBE402 /* td_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC2673E24DADDD000BBE402 /* td_api.h */; };
+		2DC2674724DADDD000BBE402 /* td_log.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC2673F24DADDD000BBE402 /* td_log.h */; };
+		2DC2674824DADDD000BBE402 /* td_api.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2DC2674024DADDD000BBE402 /* td_api.hpp */; };
+		2DC2674924DADDD000BBE402 /* Log.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC2674124DADDD000BBE402 /* Log.h */; };
+		2DC2674B24DADDF900BBE402 /* ResultHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC2674A24DADDF800BBE402 /* ResultHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DC2674D24DADDFF00BBE402 /* ResultHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC2674C24DADDFF00BBE402 /* ResultHandler.m */; };
+		2DC2674F24DADE0A00BBE402 /* TDClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC2674E24DADE0A00BBE402 /* TDClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DC2675124DADE1000BBE402 /* TDClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC2675024DADE1000BBE402 /* TDClient.m */; };
+		2DC2675724DAE30E00BBE402 /* tdjson_export.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DC2673B24DADDD000BBE402 /* tdjson_export.h */; };
+		2DC2675824DAE30E00BBE402 /* td_json_client.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DC2673C24DADDD000BBE402 /* td_json_client.h */; };
+		2DC2675924DAE30E00BBE402 /* Client.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DC2673D24DADDD000BBE402 /* Client.h */; };
+		2DC2675A24DAE30E00BBE402 /* td_api.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DC2673E24DADDD000BBE402 /* td_api.h */; };
+		2DC2675B24DAE30E00BBE402 /* td_log.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DC2673F24DADDD000BBE402 /* td_log.h */; };
+		2DC2675C24DAE30E00BBE402 /* td_api.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DC2674024DADDD000BBE402 /* td_api.hpp */; };
+		2DC2675D24DAE30E00BBE402 /* Log.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DC2674124DADDD000BBE402 /* Log.h */; };
+		2DC2675E24DAE30E00BBE402 /* module.modulemap in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DC2675324DAE1B000BBE402 /* module.modulemap */; };
+		2DC2676024DAE32200BBE402 /* TlObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DC2673924DADDD000BBE402 /* TlObject.h */; };
 		B318C842228D6F0B009C4FD7 /* TDJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = B318C840228CAFC9009C4FD7 /* TDJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3474A2D2090D808000635C3 /* libtdutils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3474A222090D808000635C3 /* libtdutils.a */; };
 		B3474A2E2090D808000635C3 /* libtdactor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3474A232090D808000635C3 /* libtdactor.a */; };
@@ -22,12 +42,52 @@
 		B3474A372090D808000635C3 /* libtdjson_private.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3474A2C2090D808000635C3 /* libtdjson_private.a */; };
 		B3474A392090D817000635C3 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3474A382090D817000635C3 /* libc++.tbd */; };
 		B3474A3B2090D81E000635C3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3474A3A2090D81E000635C3 /* libz.tbd */; };
-		B39A522A2090F29E001C89A2 /* td_log.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39A52292090F29E001C89A2 /* td_log.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2DC2675624DAE2E800BBE402 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = include/td/telegram;
+			dstSubfolderSpec = 16;
+			files = (
+				2DC2675724DAE30E00BBE402 /* tdjson_export.h in CopyFiles */,
+				2DC2675824DAE30E00BBE402 /* td_json_client.h in CopyFiles */,
+				2DC2675924DAE30E00BBE402 /* Client.h in CopyFiles */,
+				2DC2675A24DAE30E00BBE402 /* td_api.h in CopyFiles */,
+				2DC2675B24DAE30E00BBE402 /* td_log.h in CopyFiles */,
+				2DC2675C24DAE30E00BBE402 /* td_api.hpp in CopyFiles */,
+				2DC2675D24DAE30E00BBE402 /* Log.h in CopyFiles */,
+				2DC2675E24DAE30E00BBE402 /* module.modulemap in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		2DC2675F24DAE31100BBE402 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = include/td/tl;
+			dstSubfolderSpec = 16;
+			files = (
+				2DC2676024DAE32200BBE402 /* TlObject.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		B30C1CAD2090EC67000F36F3 /* td_json_client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = td_json_client.swift; sourceTree = "<group>"; };
-		B30C1CAF2090EE0A000F36F3 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = SOURCE_ROOT; };
+		2DC2673924DADDD000BBE402 /* TlObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TlObject.h; sourceTree = "<group>"; };
+		2DC2673B24DADDD000BBE402 /* tdjson_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tdjson_export.h; sourceTree = "<group>"; };
+		2DC2673C24DADDD000BBE402 /* td_json_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = td_json_client.h; sourceTree = "<group>"; };
+		2DC2673D24DADDD000BBE402 /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		2DC2673E24DADDD000BBE402 /* td_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = td_api.h; sourceTree = "<group>"; };
+		2DC2673F24DADDD000BBE402 /* td_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = td_log.h; sourceTree = "<group>"; };
+		2DC2674024DADDD000BBE402 /* td_api.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = td_api.hpp; sourceTree = "<group>"; };
+		2DC2674124DADDD000BBE402 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		2DC2674A24DADDF800BBE402 /* ResultHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultHandler.h; sourceTree = "<group>"; };
+		2DC2674C24DADDFF00BBE402 /* ResultHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultHandler.m; sourceTree = "<group>"; };
+		2DC2674E24DADE0A00BBE402 /* TDClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDClient.h; sourceTree = "<group>"; };
+		2DC2675024DADE1000BBE402 /* TDClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDClient.m; sourceTree = "<group>"; };
+		2DC2675324DAE1B000BBE402 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		B318C840228CAFC9009C4FD7 /* TDJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDJSON.h; sourceTree = "<group>"; };
 		B3474A162090D798000635C3 /* TDJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3474A1A2090D798000635C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,7 +104,6 @@
 		B3474A2C2090D808000635C3 /* libtdjson_private.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtdjson_private.a; path = lib/libtdjson_private.a; sourceTree = "<group>"; };
 		B3474A382090D817000635C3 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		B3474A3A2090D81E000635C3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		B39A52292090F29E001C89A2 /* td_log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = td_log.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +130,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DC2673624DADDD000BBE402 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				2DC2673724DADDD000BBE402 /* td */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		2DC2673724DADDD000BBE402 /* td */ = {
+			isa = PBXGroup;
+			children = (
+				2DC2673824DADDD000BBE402 /* tl */,
+				2DC2673A24DADDD000BBE402 /* telegram */,
+			);
+			path = td;
+			sourceTree = "<group>";
+		};
+		2DC2673824DADDD000BBE402 /* tl */ = {
+			isa = PBXGroup;
+			children = (
+				2DC2673924DADDD000BBE402 /* TlObject.h */,
+			);
+			path = tl;
+			sourceTree = "<group>";
+		};
+		2DC2673A24DADDD000BBE402 /* telegram */ = {
+			isa = PBXGroup;
+			children = (
+				2DC2673B24DADDD000BBE402 /* tdjson_export.h */,
+				2DC2673C24DADDD000BBE402 /* td_json_client.h */,
+				2DC2673D24DADDD000BBE402 /* Client.h */,
+				2DC2673E24DADDD000BBE402 /* td_api.h */,
+				2DC2673F24DADDD000BBE402 /* td_log.h */,
+				2DC2674024DADDD000BBE402 /* td_api.hpp */,
+				2DC2674124DADDD000BBE402 /* Log.h */,
+				2DC2675324DAE1B000BBE402 /* module.modulemap */,
+			);
+			path = telegram;
+			sourceTree = "<group>";
+		};
 		B3474A0C2090D798000635C3 = {
 			isa = PBXGroup;
 			children = (
+				2DC2673624DADDD000BBE402 /* include */,
 				B3474A182090D798000635C3 /* TDJSON */,
 				B3474A172090D798000635C3 /* Products */,
 				B3474A212090D808000635C3 /* Frameworks */,
@@ -91,11 +191,12 @@
 		B3474A182090D798000635C3 /* TDJSON */ = {
 			isa = PBXGroup;
 			children = (
+				2DC2675024DADE1000BBE402 /* TDClient.m */,
+				2DC2674E24DADE0A00BBE402 /* TDClient.h */,
+				2DC2674C24DADDFF00BBE402 /* ResultHandler.m */,
+				2DC2674A24DADDF800BBE402 /* ResultHandler.h */,
 				B318C840228CAFC9009C4FD7 /* TDJSON.h */,
-				B30C1CAD2090EC67000F36F3 /* td_json_client.swift */,
-				B39A52292090F29E001C89A2 /* td_log.swift */,
 				B3474A1A2090D798000635C3 /* Info.plist */,
-				B30C1CAF2090EE0A000F36F3 /* module.modulemap */,
 			);
 			path = TDJSON;
 			sourceTree = "<group>";
@@ -127,7 +228,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DC2674924DADDD000BBE402 /* Log.h in Headers */,
+				2DC2674F24DADE0A00BBE402 /* TDClient.h in Headers */,
+				2DC2674424DADDD000BBE402 /* td_json_client.h in Headers */,
+				2DC2674324DADDD000BBE402 /* tdjson_export.h in Headers */,
+				2DC2674B24DADDF900BBE402 /* ResultHandler.h in Headers */,
 				B318C842228D6F0B009C4FD7 /* TDJSON.h in Headers */,
+				2DC2674824DADDD000BBE402 /* td_api.hpp in Headers */,
+				2DC2674624DADDD000BBE402 /* td_api.h in Headers */,
+				2DC2674724DADDD000BBE402 /* td_log.h in Headers */,
+				2DC2674224DADDD000BBE402 /* TlObject.h in Headers */,
+				2DC2674524DADDD000BBE402 /* Client.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +254,8 @@
 				B3474A122090D798000635C3 /* Frameworks */,
 				B3474A132090D798000635C3 /* Headers */,
 				B3474A142090D798000635C3 /* Resources */,
+				2DC2675624DAE2E800BBE402 /* CopyFiles */,
+				2DC2675F24DAE31100BBE402 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -164,7 +277,7 @@
 				TargetAttributes = {
 					B3474A152090D798000635C3 = {
 						CreatedOnToolsVersion = 9.3;
-						LastSwiftMigration = 0930;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -217,8 +330,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B39A522A2090F29E001C89A2 /* td_log.swift in Sources */,
-				B30C1CAE2090EC67000F36F3 /* td_json_client.swift in Sources */,
+				2DC2675124DADE1000BBE402 /* TDClient.m in Sources */,
+				2DC2674D24DADDFF00BBE402 /* ResultHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,4 +8,6 @@
 
 // In this header, you should import all the public headers of your framework using statements like #import <TDJSON/PublicHeader.h>
 
-
+#import "td_json_client.h"
+#import <TDJSON/TDClient.h>
+#import <TDJSON/ResultHandler.h>
